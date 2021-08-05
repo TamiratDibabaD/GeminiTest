@@ -50,7 +50,7 @@ public class TestBase {
             case "firefox":
                 System.out.println("Starting Firefox Driver");
                 WebDriverManager.firefoxdriver().setup();
-                driver = new ChromeDriver();
+                driver = new FirefoxDriver();
                 break;
             default:
                 System.out.println("Starting chrome Driver");
