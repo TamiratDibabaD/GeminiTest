@@ -15,6 +15,7 @@ import org.testng.annotations.BeforeSuite;
 import java.io.FileReader;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class TestBase {
 
@@ -49,11 +50,6 @@ public class TestBase {
             case "firefox":
                 System.out.println("Starting Firefox Driver");
                 WebDriverManager.firefoxdriver().setup();
-                driver = new ChromeDriver();
-                break;
-            case "ie":
-                System.out.println("Starting IE Driver");
-                WebDriverManager.iedriver().setup();
                 driver = new ChromeDriver();
                 break;
             default:
